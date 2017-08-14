@@ -21,8 +21,11 @@ public class Logica {
         while(op<=4)
 	{
          Scanner sc=new Scanner (System.in);
-         System.out.println("1.Cuadrado,2.Circulo,3.Rectangulo,4.Traiangulo");
-         System.out.println("¿A QUE FIGURA DESEA CALCULAR EL AREA Y EL PERIMETRO");
+         System.out.println("1.Cuadrado");
+         System.out.println("2.Circulo");
+         System.out.println("3.Rectangulo");
+         System.out.println("4.Triangulo");
+         System.out.println("¿A QUE FIGURA DESEA CALCULAR EL AREA Y EL PERIMETRO?  (NUMERO)");
          op=sc.nextInt();
            switch(op){
                case 1:
@@ -33,6 +36,7 @@ public class Logica {
                     c.calcularPerimetro();
                     System.out.println("area:"+c.getArea());
                     System.out.println("perimetro:"+c.getPerimetro());
+                    System.out.println();
                     break;
                 
                case 2:  
@@ -43,6 +47,7 @@ public class Logica {
                     r.calcularPerimetro();
                     System.out.println("area:"+r.getArea());
                     System.out.println("perimetro:"+r.getPerimetro());
+                    System.out.println();
                     break;
                     
                case 3:  
@@ -55,6 +60,7 @@ public class Logica {
                     l.calcularPerimetro();
                     System.out.println("area:"+l.getArea());
                     System.out.println("perimetro:"+l.getPerimetro());
+                    System.out.println();
                     break;
                     
                case 4:  
@@ -67,6 +73,7 @@ public class Logica {
                     m.calcularPerimetro();
                     System.out.println("area:"+m.getArea());
                     System.out.println("perimetro:"+m.getPerimetro());
+                    System.out.println();
                     break;    
            }
             
@@ -74,3 +81,4 @@ public class Logica {
     }
     
 }
+
