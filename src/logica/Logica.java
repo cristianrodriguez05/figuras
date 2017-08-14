@@ -17,11 +17,13 @@ public class Logica {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
+        int op=0;	
+        while(op<=4)
+	{
          Scanner sc=new Scanner (System.in);
          System.out.println("1.Cuadrado,2.Circulo,3.Rectangulo,4.Traiangulo");
          System.out.println("¿A QUE FIGURA DESEA CALCULAR EL AREA Y EL PERIMETRO");
-         int op =sc.nextInt();
+         op=sc.nextInt();
            switch(op){
                case 1:
                     Cuadrado c = new Cuadrado();
@@ -42,9 +44,33 @@ public class Logica {
                     System.out.println("area:"+r.getArea());
                     System.out.println("perimetro:"+r.getPerimetro());
                     break;
+                    
+               case 3:  
+                    Rectangulo l = new Rectangulo();
+                    System.out.println("ingrese el valor de la altura");
+                    l.setAltura(sc.nextInt());
+                    System.out.println("ingrese el valor de la base");
+                    l.setBase(sc.nextInt());
+                    l.calcularArea();
+                    l.calcularPerimetro();
+                    System.out.println("area:"+l.getArea());
+                    System.out.println("perimetro:"+l.getPerimetro());
+                    break;
+                    
+               case 4:  
+                    Triangulo m = new Triangulo();
+                    System.out.println("ingrese el valor de la altura");
+                    m.setAltura(sc.nextInt());
+                    System.out.println("ingrese el valor de la base");
+                    m.setBase(sc.nextInt());
+                    m.calcularArea();
+                    m.calcularPerimetro();
+                    System.out.println("area:"+m.getArea());
+                    System.out.println("perimetro:"+m.getPerimetro());
+                    break;    
            }
             
          }
     }
     
-
+}
