@@ -35,6 +35,6 @@ public class Triangulo extends Figura{
     }
 
     public void calcularPerimetro() {
-       this.perimetro=this.altura+this.base;
+       this.perimetro=(int)Math.sqrt((double)Math.pow(this.altura,2)+(double)Math.pow(this.base,2));
     }
 }
